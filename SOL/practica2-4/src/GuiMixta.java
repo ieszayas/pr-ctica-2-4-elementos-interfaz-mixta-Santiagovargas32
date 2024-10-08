@@ -1,8 +1,13 @@
+
+import java.awt.Color;
+import java.util.regex.Pattern;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author Santiago
@@ -38,7 +43,7 @@ public class GuiMixta extends javax.swing.JFrame {
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
         jCheckBox4 = new javax.swing.JCheckBox();
-        jTextField1 = new javax.swing.JTextField();
+        emailField = new javax.swing.JTextField();
         jSpinner1 = new javax.swing.JSpinner();
         jComboBox1 = new javax.swing.JComboBox<>();
         jTextField2 = new javax.swing.JTextField();
@@ -59,7 +64,7 @@ public class GuiMixta extends javax.swing.JFrame {
         jRadioButton6mirror = new javax.swing.JRadioButton();
         jCheckBox7mirror = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        statusBar = new javax.swing.JLabel();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -114,9 +119,10 @@ public class GuiMixta extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+        emailField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField1KeyReleased(evt);
+                emailFieldKeyReleased1(evt);
+                emailFieldKeyReleased(evt);
             }
         });
 
@@ -136,6 +142,7 @@ public class GuiMixta extends javax.swing.JFrame {
         jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField2KeyReleased(evt);
+                emailFieldKeyReleased(evt);
             }
         });
 
@@ -197,14 +204,14 @@ public class GuiMixta extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(statusBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(statusBar, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -242,7 +249,7 @@ public class GuiMixta extends javax.swing.JFrame {
                                         .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addContainerGap(122, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jSlider2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -280,7 +287,7 @@ public class GuiMixta extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButton1)
                     .addComponent(jCheckBox2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -345,11 +352,11 @@ public class GuiMixta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+    private void emailFieldKeyReleased1(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailFieldKeyReleased1
         // TODO add your handling code here:
-        String text = jTextField1.getText();
+        String text = emailField.getText();
         jTextField3mirror.setText(new StringBuilder(text).reverse().toString());
-    }//GEN-LAST:event_jTextField1KeyReleased
+    }//GEN-LAST:event_emailFieldKeyReleased1
 
     private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
         // TODO add your handling code here:
@@ -444,6 +451,22 @@ public class GuiMixta extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jToggleButton3mirrorActionPerformed
 
+    private void emailFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailFieldKeyReleased
+        // TODO add your handling code here:
+        String email = emailField.getText();
+        if (isValidEmail(email)) {
+            emailField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); // Cambia el borde a verde
+            // Muestra el ícono de validación y el mensaje en la barra de estado
+            statusBar.setText("Correo válido.");
+            //statusBar.setIcon(new ImageIcon(getClass().getResource("/path_to_valid_icon.png")));
+        } else {
+            emailField.setBorder(BorderFactory.createLineBorder(Color.RED, 2)); // Cambia el borde a rojo
+            statusBar.setText("Correo inválido.");
+            //statusBar.setIcon(new ImageIcon(getClass().getResource("/path_to_invalid_icon.png")));
+        }
+
+    }//GEN-LAST:event_emailFieldKeyReleased
+
     /**
      * @param args the command line arguments
      */
@@ -480,6 +503,7 @@ public class GuiMixta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField emailField;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
@@ -492,7 +516,6 @@ public class GuiMixta extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel2mirror;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton1;
@@ -508,11 +531,20 @@ public class GuiMixta extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2mirror;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3mirror;
     private javax.swing.JTextField jTextField4mirror;
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton3mirror;
+    private javax.swing.JLabel statusBar;
     // End of variables declaration//GEN-END:variables
+
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+        Pattern pat = Pattern.compile(emailRegex);
+        if (email == null) {
+            return false;
+        }
+        return pat.matcher(email).matches();
+    }
 }
