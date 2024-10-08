@@ -43,7 +43,7 @@ public class GuiMixta extends javax.swing.JFrame {
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
         jCheckBox4 = new javax.swing.JCheckBox();
-        emailField = new javax.swing.JTextField();
+        JTextField = new javax.swing.JTextField();
         jSpinner1 = new javax.swing.JSpinner();
         jComboBox1 = new javax.swing.JComboBox<>();
         jTextField2 = new javax.swing.JTextField();
@@ -119,10 +119,9 @@ public class GuiMixta extends javax.swing.JFrame {
             }
         });
 
-        emailField.addKeyListener(new java.awt.event.KeyAdapter() {
+        JTextField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                emailFieldKeyReleased1(evt);
-                emailFieldKeyReleased(evt);
+                JTextFieldKeyReleased1(evt);
             }
         });
 
@@ -249,7 +248,7 @@ public class GuiMixta extends javax.swing.JFrame {
                                         .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addContainerGap(130, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jSlider2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -287,7 +286,7 @@ public class GuiMixta extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButton1)
                     .addComponent(jCheckBox2)
-                    .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -352,12 +351,6 @@ public class GuiMixta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void emailFieldKeyReleased1(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailFieldKeyReleased1
-        // TODO add your handling code here:
-        String text = emailField.getText();
-        jTextField3mirror.setText(new StringBuilder(text).reverse().toString());
-    }//GEN-LAST:event_emailFieldKeyReleased1
-
     private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
         // TODO add your handling code here:
         String text = jTextField2.getText();
@@ -419,9 +412,11 @@ public class GuiMixta extends javax.swing.JFrame {
         if (jToggleButton2.isSelected()) {
             // Cambiar la imagen a 'b_on.png' cuando está activado
             jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
+            jToggleButton3mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
         } else {
             // Cambiar la imagen a 'b_off.png' cuando está desactivado
             jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
+            jToggleButton3mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
         }
 
 
@@ -429,31 +424,32 @@ public class GuiMixta extends javax.swing.JFrame {
 
     private void jToggleButton3mirrorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3mirrorActionPerformed
         // TODO add your handling code here:
-
-        if (jToggleButton3mirror.isSelected()) {
-            // Cambiar la imagen a 'b_on.png' cuando está activado
-            jToggleButton3mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
-        } else {
-            // Cambiar la imagen a 'b_off.png' cuando está desactivado
-            jToggleButton3mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
-        }
+//        jToggleButton2.setSelected(jToggleButton3mirror.isSelected());
+       
     }//GEN-LAST:event_jToggleButton3mirrorActionPerformed
 
     private void emailFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailFieldKeyReleased
         // TODO add your handling code here:
-        String email = emailField.getText();
+        String email = jTextField2.getText();
         if (isValidEmail(email)) {
-            emailField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); // Cambia el borde a verde
+            jTextField2.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); // Cambia el borde a verde
             // Muestra el ícono de validación y el mensaje en la barra de estado
             statusBar.setText("Correo válido.");
             //statusBar.setIcon(new ImageIcon(getClass().getResource("/path_to_valid_icon.png")));
         } else {
-            emailField.setBorder(BorderFactory.createLineBorder(Color.RED, 2)); // Cambia el borde a rojo
+            jTextField2.setBorder(BorderFactory.createLineBorder(Color.RED, 2)); // Cambia el borde a rojo
             statusBar.setText("Correo inválido.");
             //statusBar.setIcon(new ImageIcon(getClass().getResource("/path_to_invalid_icon.png")));
         }
 
     }//GEN-LAST:event_emailFieldKeyReleased
+
+    private void JTextFieldKeyReleased1(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JTextFieldKeyReleased1
+        // TODO add your handling code here:
+        String text = JTextField.getText();
+        jTextField3mirror.setText(new StringBuilder(text).reverse().toString());
+
+    }//GEN-LAST:event_JTextFieldKeyReleased1
 
     /**
      * @param args the command line arguments
@@ -491,7 +487,7 @@ public class GuiMixta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField emailField;
+    private javax.swing.JTextField JTextField;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
