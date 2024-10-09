@@ -78,7 +78,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -105,34 +105,32 @@
                                   <Component id="jComboBox1" alignment="0" pref="128" max="32767" attributes="0"/>
                                   <Component id="jSpinner1" alignment="0" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="jTextField2" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
+                              <Component id="emailField" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel2mirror" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jRadioButton4mirror" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton5mirror" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton6mirror" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jRadioButton1mirror" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jRadioButton3mirror" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jCheckBox7mirror" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox5mirror" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBox6mirror" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox1mirror" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox2mirror" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jCheckBox3mirror" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
+                              <Component id="jRadioButton2mirror" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jComboBox2mirror" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jSpinner2mirror" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jTextField4mirror" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
-                              <Component id="jTextField3mirror" min="-2" pref="205" max="-2" attributes="0"/>
+                              <Component id="jComboBoxmirror" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                              <Component id="emailFieldmirror" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
+                              <Component id="jTextField1mirror" min="-2" pref="205" max="-2" attributes="0"/>
+                              <Component id="jSpinner2mirror" min="-2" pref="128" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -150,7 +148,7 @@
                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                                   <Component id="jLabelIconoValidacion" min="-2" pref="42" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                  <Component id="jToggleButton2" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <Component id="jToggleButton" min="-2" pref="91" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -158,7 +156,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
-                          <Component id="jToggleButton3mirror" min="-2" pref="91" max="-2" attributes="0"/>
+                          <Component id="jToggleButton1mirror" min="-2" pref="91" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -168,67 +166,82 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="JTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jSlider1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jCheckBox4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jToggleButton2" min="-2" pref="35" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="JTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jSlider1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jCheckBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jToggleButton" min="-2" pref="35" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="emailField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel1" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="jLabelIconoValidacion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jSlider2mirror" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="11" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jCheckBox1mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jRadioButton1mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jTextField1mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jRadioButton2mirror" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jLabelIconoValidacion" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jCheckBox2mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jSpinner2mirror" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jRadioButton4mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox7mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField3mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jSlider2mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jRadioButton3mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jCheckBox3mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBoxmirror" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jRadioButton5mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox5mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jSpinner2mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jCheckBox6mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRadioButton6mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox2mirror" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField4mirror" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="emailFieldmirror" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2mirror" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jToggleButton3mirror" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="jToggleButton1mirror" min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="94" max="32767" attributes="0"/>
                   <Component id="jPanel2" max="-2" attributes="0"/>
@@ -323,9 +336,9 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="emailField">
           <Events>
-            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField2KeyReleased,emailFieldKeyReleased"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="emailFieldKeyReleased1,emailFieldKeyReleased"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -338,18 +351,18 @@
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSlider1StateChanged"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="jToggleButton2">
+        <Component class="javax.swing.JToggleButton" name="jToggleButton">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox5mirror">
+        <Component class="javax.swing.JCheckBox" name="jCheckBox2mirror">
           <Properties>
             <Property name="text" type="java.lang.String" value="jCheckBox3"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox6mirror">
+        <Component class="javax.swing.JCheckBox" name="jCheckBox3mirror">
           <Properties>
             <Property name="text" type="java.lang.String" value="jCheckBox4"/>
             <Property name="enabled" type="boolean" value="false"/>
@@ -360,7 +373,7 @@
             <Property name="text" type="java.lang.String" value="Correo"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3mirror">
+        <Component class="javax.swing.JTextField" name="jTextField1mirror">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
@@ -375,7 +388,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox2mirror">
+        <Component class="javax.swing.JComboBox" name="jComboBoxmirror">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -391,20 +404,23 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="jToggleButton3mirror">
+        <Component class="javax.swing.JToggleButton" name="jToggleButton1mirror">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton3mirrorActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton1mirrorActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4mirror">
+        <Component class="javax.swing.JTextField" name="emailFieldmirror">
           <Properties>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailFieldmirrorActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton4mirror">
+        <Component class="javax.swing.JRadioButton" name="jRadioButton1mirror">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="buttonGroup2"/>
@@ -413,7 +429,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton5mirror">
+        <Component class="javax.swing.JRadioButton" name="jRadioButton2mirror">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="buttonGroup2"/>
@@ -422,7 +438,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton6mirror">
+        <Component class="javax.swing.JRadioButton" name="jRadioButton3mirror">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="buttonGroup2"/>
@@ -431,7 +447,7 @@
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox7mirror">
+        <Component class="javax.swing.JCheckBox" name="jCheckBox1mirror">
           <Properties>
             <Property name="text" type="java.lang.String" value="jCheckBox2"/>
             <Property name="enabled" type="boolean" value="false"/>

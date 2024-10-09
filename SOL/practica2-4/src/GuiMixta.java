@@ -49,23 +49,23 @@ public class GuiMixta extends javax.swing.JFrame {
         JTextField = new javax.swing.JTextField();
         jSpinner1 = new javax.swing.JSpinner();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField2 = new javax.swing.JTextField();
+        emailField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jSlider1 = new javax.swing.JSlider();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jCheckBox5mirror = new javax.swing.JCheckBox();
-        jCheckBox6mirror = new javax.swing.JCheckBox();
+        jToggleButton = new javax.swing.JToggleButton();
+        jCheckBox2mirror = new javax.swing.JCheckBox();
+        jCheckBox3mirror = new javax.swing.JCheckBox();
         jLabel2mirror = new javax.swing.JLabel();
-        jTextField3mirror = new javax.swing.JTextField();
+        jTextField1mirror = new javax.swing.JTextField();
         jSlider2mirror = new javax.swing.JSlider();
         jSpinner2mirror = new javax.swing.JSpinner();
-        jComboBox2mirror = new javax.swing.JComboBox<>();
-        jToggleButton3mirror = new javax.swing.JToggleButton();
-        jTextField4mirror = new javax.swing.JTextField();
-        jRadioButton4mirror = new javax.swing.JRadioButton();
-        jRadioButton5mirror = new javax.swing.JRadioButton();
-        jRadioButton6mirror = new javax.swing.JRadioButton();
-        jCheckBox7mirror = new javax.swing.JCheckBox();
+        jComboBoxmirror = new javax.swing.JComboBox<>();
+        jToggleButton1mirror = new javax.swing.JToggleButton();
+        emailFieldmirror = new javax.swing.JTextField();
+        jRadioButton1mirror = new javax.swing.JRadioButton();
+        jRadioButton2mirror = new javax.swing.JRadioButton();
+        jRadioButton3mirror = new javax.swing.JRadioButton();
+        jCheckBox1mirror = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         statusBar = new javax.swing.JLabel();
         jLabelIconoValidacion = new javax.swing.JLabel();
@@ -145,9 +145,9 @@ public class GuiMixta extends javax.swing.JFrame {
             }
         });
 
-        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+        emailField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField2KeyReleased(evt);
+                emailFieldKeyReleased1(evt);
                 emailFieldKeyReleased(evt);
             }
         });
@@ -160,52 +160,57 @@ public class GuiMixta extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+        jToggleButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton2ActionPerformed(evt);
+                jToggleButtonActionPerformed(evt);
             }
         });
 
-        jCheckBox5mirror.setText("jCheckBox3");
-        jCheckBox5mirror.setEnabled(false);
+        jCheckBox2mirror.setText("jCheckBox3");
+        jCheckBox2mirror.setEnabled(false);
 
-        jCheckBox6mirror.setText("jCheckBox4");
-        jCheckBox6mirror.setEnabled(false);
+        jCheckBox3mirror.setText("jCheckBox4");
+        jCheckBox3mirror.setEnabled(false);
 
         jLabel2mirror.setText("Correo");
 
-        jTextField3mirror.setEnabled(false);
+        jTextField1mirror.setEnabled(false);
 
         jSlider2mirror.setEnabled(false);
 
         jSpinner2mirror.setEnabled(false);
 
-        jComboBox2mirror.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2mirror.setEnabled(false);
+        jComboBoxmirror.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxmirror.setEnabled(false);
 
-        jToggleButton3mirror.setEnabled(false);
-        jToggleButton3mirror.addActionListener(new java.awt.event.ActionListener() {
+        jToggleButton1mirror.setEnabled(false);
+        jToggleButton1mirror.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton3mirrorActionPerformed(evt);
+                jToggleButton1mirrorActionPerformed(evt);
             }
         });
 
-        jTextField4mirror.setEnabled(false);
+        emailFieldmirror.setEnabled(false);
+        emailFieldmirror.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailFieldmirrorActionPerformed(evt);
+            }
+        });
 
-        buttonGroup2.add(jRadioButton4mirror);
-        jRadioButton4mirror.setText("jRadioButton1");
-        jRadioButton4mirror.setEnabled(false);
+        buttonGroup2.add(jRadioButton1mirror);
+        jRadioButton1mirror.setText("jRadioButton1");
+        jRadioButton1mirror.setEnabled(false);
 
-        buttonGroup2.add(jRadioButton5mirror);
-        jRadioButton5mirror.setText("jRadioButton2");
-        jRadioButton5mirror.setEnabled(false);
+        buttonGroup2.add(jRadioButton2mirror);
+        jRadioButton2mirror.setText("jRadioButton2");
+        jRadioButton2mirror.setEnabled(false);
 
-        buttonGroup2.add(jRadioButton6mirror);
-        jRadioButton6mirror.setText("jRadioButton3");
-        jRadioButton6mirror.setEnabled(false);
+        buttonGroup2.add(jRadioButton3mirror);
+        jRadioButton3mirror.setText("jRadioButton3");
+        jRadioButton3mirror.setEnabled(false);
 
-        jCheckBox7mirror.setText("jCheckBox2");
-        jCheckBox7mirror.setEnabled(false);
+        jCheckBox1mirror.setText("jCheckBox2");
+        jCheckBox1mirror.setEnabled(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -254,27 +259,26 @@ public class GuiMixta extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, 128, Short.MAX_VALUE)
                                 .addComponent(jSpinner1, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton4mirror)
-                                    .addComponent(jRadioButton5mirror)
-                                    .addComponent(jRadioButton6mirror))
+                                    .addComponent(jRadioButton1mirror)
+                                    .addComponent(jRadioButton3mirror))
                                 .addGap(31, 31, 31)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jCheckBox7mirror)
-                                    .addComponent(jCheckBox5mirror)
-                                    .addComponent(jCheckBox6mirror))))
+                                    .addComponent(jCheckBox1mirror)
+                                    .addComponent(jCheckBox2mirror)
+                                    .addComponent(jCheckBox3mirror)))
+                            .addComponent(jRadioButton2mirror))
                         .addGap(38, 38, 38)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jComboBox2mirror, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jSpinner2mirror, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTextField4mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jComboBoxmirror, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(emailFieldmirror, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField1mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSpinner2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -287,66 +291,75 @@ public class GuiMixta extends javax.swing.JFrame {
                                 .addGap(12, 12, 12)
                                 .addComponent(jLabelIconoValidacion, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(43, 43, 43)
-                                .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jToggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(34, 34, 34))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(97, 97, 97)
-                        .addComponent(jToggleButton3mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jToggleButton1mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jCheckBox2)
-                    .addComponent(JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox4)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(87, 87, 87))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jRadioButton1)
+                            .addComponent(jCheckBox2)
+                            .addComponent(JTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jRadioButton2)
+                            .addComponent(jCheckBox3)
+                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jCheckBox4)
+                            .addComponent(jRadioButton3)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabelIconoValidacion))
-                        .addGap(78, 78, 78)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jToggleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(87, 87, 87))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jLabelIconoValidacion))
+                                        .addGap(78, 78, 78)))
+                                .addComponent(jSlider2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jCheckBox1mirror)
+                                    .addComponent(jRadioButton1mirror)
+                                    .addComponent(jTextField1mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(30, 30, 30)))
+                        .addComponent(jRadioButton2mirror))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jCheckBox2mirror)
+                            .addComponent(jSpinner2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton4mirror)
-                    .addComponent(jCheckBox7mirror)
-                    .addComponent(jTextField3mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSlider2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton5mirror)
-                    .addComponent(jCheckBox5mirror)
-                    .addComponent(jSpinner2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox6mirror)
-                    .addComponent(jRadioButton6mirror)
-                    .addComponent(jComboBox2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                    .addComponent(jRadioButton3mirror)
+                    .addComponent(jCheckBox3mirror)
+                    .addComponent(jComboBoxmirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField4mirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(emailFieldmirror, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel2mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jToggleButton3mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jToggleButton1mirror, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -368,42 +381,42 @@ public class GuiMixta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
+    private void emailFieldKeyReleased1(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailFieldKeyReleased1
         // TODO add your handling code here:
-        String text = jTextField2.getText();
-        jTextField4mirror.setText(new StringBuilder(text).reverse().toString());
-    }//GEN-LAST:event_jTextField2KeyReleased
+        String text = emailField.getText();
+        emailFieldmirror.setText(new StringBuilder(text).reverse().toString());
+    }//GEN-LAST:event_emailFieldKeyReleased1
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
 
-        jRadioButton4mirror.setSelected(jRadioButton1.isSelected());
+        jRadioButton1mirror.setSelected(jRadioButton1.isSelected());
 
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         // TODO add your handling code here:
-        jRadioButton5mirror.setSelected(jRadioButton2.isSelected());
+        jRadioButton2mirror.setSelected(jRadioButton2.isSelected());
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         // TODO add your handling code here:
-        jRadioButton6mirror.setSelected(jRadioButton3.isSelected());
+        jRadioButton3mirror.setSelected(jRadioButton3.isSelected());
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
         // TODO add your handling code here:
-        jCheckBox7mirror.setSelected(jCheckBox2.isSelected());
+        jCheckBox1mirror.setSelected(jCheckBox2.isSelected());
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
         // TODO add your handling code here:
-        jCheckBox5mirror.setSelected(jCheckBox3.isSelected());
+        jCheckBox2mirror.setSelected(jCheckBox3.isSelected());
     }//GEN-LAST:event_jCheckBox3ActionPerformed
 
     private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
         // TODO add your handling code here:
-        jCheckBox6mirror.setSelected(jCheckBox4.isSelected());
+        jCheckBox3mirror.setSelected(jCheckBox4.isSelected());
     }//GEN-LAST:event_jCheckBox4ActionPerformed
 
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
@@ -413,7 +426,7 @@ public class GuiMixta extends javax.swing.JFrame {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
-        jComboBox2mirror.setSelectedItem(jComboBox1.getSelectedItem());
+        jComboBoxmirror.setSelectedItem(jComboBox1.getSelectedItem());
 
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
@@ -423,39 +436,39 @@ public class GuiMixta extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jSlider1StateChanged
 
-    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+    private void jToggleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonActionPerformed
         // TODO add your handling code here:
-        jToggleButton3mirror.setSelected(jToggleButton2.isSelected());
-        if (jToggleButton2.isSelected()) {
+        jToggleButton1mirror.setSelected(jToggleButton.isSelected());
+        if (jToggleButton.isSelected()) {
             // Cambiar la imagen a 'b_on.png' cuando está activado
-            jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
-            jToggleButton3mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
+            jToggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
+            jToggleButton1mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
         } else {
             // Cambiar la imagen a 'b_off.png' cuando está desactivado
-            jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
-            jToggleButton3mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
+            jToggleButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_on.png")));
+            jToggleButton1mirror.setIcon(new javax.swing.ImageIcon(getClass().getResource("b_off.png")));
         }
 
 
-    }//GEN-LAST:event_jToggleButton2ActionPerformed
+    }//GEN-LAST:event_jToggleButtonActionPerformed
 
-    private void jToggleButton3mirrorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3mirrorActionPerformed
+    private void jToggleButton1mirrorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1mirrorActionPerformed
         // TODO add your handling code here:
 //        jToggleButton2.setSelected(jToggleButton3mirror.isSelected());
        
-    }//GEN-LAST:event_jToggleButton3mirrorActionPerformed
+    }//GEN-LAST:event_jToggleButton1mirrorActionPerformed
 
     private void emailFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailFieldKeyReleased
         // TODO add your handling code here:
-        String email = jTextField2.getText();
+        String email = emailField.getText();
         if (isValidEmail(email)) {
-            jTextField2.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); // Cambia el borde a verde
+            emailField.setBorder(BorderFactory.createLineBorder(Color.GREEN, 2)); // Cambia el borde a verde
             // Muestra el ícono de validación y el mensaje en la barra de estado
             statusBar.setText("Correo válido.");
              jLabelIconoValidacion.setVisible(true);
             //statusBar.setIcon(new ImageIcon(getClass().getResource("/path_to_valid_icon.png")));
         } else {
-            jTextField2.setBorder(BorderFactory.createLineBorder(Color.RED, 2)); // Cambia el borde a rojo
+            emailField.setBorder(BorderFactory.createLineBorder(Color.RED, 2)); // Cambia el borde a rojo
             statusBar.setText("Correo inválido.");
             jLabelIconoValidacion.setVisible(false);
             //statusBar.setIcon(new ImageIcon(getClass().getResource("/path_to_invalid_icon.png")));
@@ -466,9 +479,13 @@ public class GuiMixta extends javax.swing.JFrame {
     private void JTextFieldKeyReleased1(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JTextFieldKeyReleased1
         // TODO add your handling code here:
         String text = JTextField.getText();
-        jTextField3mirror.setText(new StringBuilder(text).reverse().toString());
+        jTextField1mirror.setText(new StringBuilder(text).reverse().toString());
 
     }//GEN-LAST:event_JTextFieldKeyReleased1
+
+    private void emailFieldmirrorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldmirrorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailFieldmirrorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -509,15 +526,17 @@ public class GuiMixta extends javax.swing.JFrame {
     private javax.swing.JTextField JTextField;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JTextField emailField;
+    private javax.swing.JTextField emailFieldmirror;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox1mirror;
     private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox2mirror;
     private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox3mirror;
     private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5mirror;
-    private javax.swing.JCheckBox jCheckBox6mirror;
-    private javax.swing.JCheckBox jCheckBox7mirror;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2mirror;
+    private javax.swing.JComboBox<String> jComboBoxmirror;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel2mirror;
@@ -525,11 +544,11 @@ public class GuiMixta extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton1mirror;
     private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton2mirror;
     private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4mirror;
-    private javax.swing.JRadioButton jRadioButton5mirror;
-    private javax.swing.JRadioButton jRadioButton6mirror;
+    private javax.swing.JRadioButton jRadioButton3mirror;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSlider jSlider1;
@@ -537,11 +556,9 @@ public class GuiMixta extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2mirror;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3mirror;
-    private javax.swing.JTextField jTextField4mirror;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3mirror;
+    private javax.swing.JTextField jTextField1mirror;
+    private javax.swing.JToggleButton jToggleButton;
+    private javax.swing.JToggleButton jToggleButton1mirror;
     private javax.swing.JLabel statusBar;
     // End of variables declaration//GEN-END:variables
 
